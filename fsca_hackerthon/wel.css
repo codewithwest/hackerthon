@@ -1,0 +1,82 @@
+.welcome{
+    width: 90%;
+    height: 30vh;
+    position: absolute;
+    background: linear-gradient(
+        10deg,rgba(15,130,22,.7),transparent,
+        rgba(15,130,22,.7),transparent,
+        rgba(15,130,22,.7),transparent,
+        rgba(15,130,22,.7),transparent,
+        rgba(15,130,22,.7),transparent
+    );
+    z-index: 50;
+    border-radius: 60px;
+    box-shadow: 30px 0 15px rgba(16, 53, 239, 0.8),
+    -30px 0 15px rgba(16, 53, 239, 0.8);
+    transition: all 5s;
+    color: #fff;
+
+}
+.ins-to-play-game{
+    width: 90%;
+    height: 60vh;
+    position: absolute;
+    background: linear-gradient(
+        10deg,rgba(15,130,22,.7),transparent,
+        rgba(15,130,22,.7),transparent,
+        rgba(15,130,22,.7),transparent,
+        rgba(15,130,22,.7),transparent,
+        rgba(15,130,22,.7),transparent
+    );
+    z-index: 50;
+    border-radius: 60px;
+    box-shadow: 30px 0 15px rgba(16, 53, 239, 0.8),
+    -30px 0 15px rgba(16, 53, 239, 0.8);
+    transition: all 5s;
+    color: #fff;
+    overflow-y: auto;
+    display: none;
+    flex-direction: 
+    column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ins-col-btn{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+   border-radius: 100px;
+    padding: .5%;
+    font-weight: bolder;
+    margin: auto;
+}
+.ins-col-btn:hover{
+    background: rgba(247, 98, 5, 0.7);
+    color: #fff;
+
+}
+.info{
+    z-index: 66;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3.5%;
+    border-radius: 100px;
+    padding: .5%;
+    font-weight: bolder;
+    margin: auto;
+    background: yellow;
+}
+
+@media screen and (min-width: 1000px) {
+    .welcome, .ins-to-play-game {
+        width: 40%;
+    }
+    .info{
+        width: 2.2%;}
+        .ins-col-btn{
+            width: 5%;
+            padding: 1%;}
+
+  }

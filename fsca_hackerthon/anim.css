@@ -1,0 +1,81 @@
+@keyframes pop {
+    0% {
+        background:
+            linear-gradient(36deg, red,
+                black,
+                green, black,
+                blue);
+    }
+
+    20% {
+        background:
+            linear-gradient(72deg, red,
+                black,
+                green, black,
+                blue);
+    }
+
+    30% {
+        background:
+            linear-gradient(108deg, red,
+                black,
+                green, black,
+                blue);
+    }
+
+    40% {
+        background:
+            linear-gradient(144deg, red,
+                black,
+                green, black,
+                blue);
+    }
+
+    50% {
+        background:
+            linear-gradient(180deg, red,
+                black,
+                green, black,
+                blue);
+    }
+
+    60% {
+        background:
+            linear-gradient(216deg, red,
+                black,
+                green, black,
+                blue);
+    }
+
+    70% {
+        background:
+            linear-gradient(252deg, red,
+                black,
+                green, black,
+                blue);
+    }
+
+    80% {
+        background:
+            linear-gradient(288deg, red,
+                black,
+                green, black,
+                blue);
+    }
+
+    90% {
+        background:
+            linear-gradient(324deg, red,
+                black,
+                green, black,
+                blue);
+    }
+
+    100% {
+        background:
+            linear-gradient(360deg, red,
+                black,
+                green, black,
+                blue);
+    }
+}

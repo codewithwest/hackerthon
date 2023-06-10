@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.d-none {
+    display: none;
+}
+
+.center-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text{
+    width: 90%;
+    height: 100%;
+}
+.fill{
+    width: 100%;
+    height: 100%;
+}
+.d-flex {
+    display: flex;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.par-bg {
+    background: inherit;
+}
+
+.card-bg {
+    background: linear-gradient(15deg, transparent,
+            rgba(155, 210, 3, 0.7), transparent);
+}
+
+.top-banner {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    background: rgba(3, 182, 241, 0.984);
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.game-cont {
+    height: 100vh;
+    background: rgba(22, 22, 22, .9);
+    display: flex;
+}
+
+.scoreboard {
+    display: flex;
+    position: absolute;
+    height: 10vh;
+    width: 15%;
+    bottom: 0;
+    right: 0;
+}
+.logo-div img{
+    width: 80%;
+    height: 90%;
+}
+.coins {
+    display: flex;
+    position: absolute;
+    height: 10vh;
+    width: 25%;
+    bottom: 0;
+    left: 0;
+}
+
+.cover-cont {
+    display: grid;
+    grid-template-columns: repeat(7, calc(100%/7));
+    width: 70%;
+    height: 50%;
+}
+
+.landing-cards {
+    box-shadow: 10px 10px -10px -10px rgb(30, 31, 29);
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+}
+
+.landing-cards:hover {
+    cursor: pointer;
+}
+
+/* .front {
+    display: none;
+    position: absolute;
+    width: 78%;
+    height: 10%;
+    transform:
+        perspective(100em) rotateX(0deg) rotateY(-73deg) rotateZ(60deg) translateZ(-8.9rem) translateY(-1.69rem) translateX(6rem);
+    border: 1px solid;
+    border-color:
+        red;
+} */
+
+.transformation {
+    box-shadow:
+        0px 30px 10px rgb(184, 194, 204),
+        0px 0px 3px rgb(49, 116, 184);
+    transform:
+        perspective(50em) rotateX(40deg) rotateY(5deg) rotateZ(-18deg);
+    /* border-radius: 10px; */
+    border: 1px solid;
+    border-color:
+        red;
+}
+
+.d-none {
+    background: inherit;
+}
+
+.green {
+    background: rgba(22, 222, 22, .9);
+}
+
+.blue {
+    background: rgba(22, 22, 245, .9);
+}
+
+.pop-up {
+    position: absolute;
+    margin-top: 10vh;
+    height: 60%;
+    width: 50%;
+    background:
+        linear-gradient(10deg, red,
+            black,
+            green, black,
+            blue);
+    animation-name: pop;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.card-mes {
+    background: black;
+    height: 97%;
+    width: 97%;
+    color: white;
+    display: grid;
+    grid-template-rows:20% 70% 10%;
+}
+.collapse-mes {
+    position: absolute;
+    display: flex;
+    width: 7%;
+    height: 7%;
+    right: 0;
+    transition: all 3s;
+}
+
+.collapse-mes:hover {
+    background: rgb(244, 65, 10);
+    color: #fff;
+}
+
+.die-cont {
+    position: absolute;
+    right: 0;
+    margin-bottom: 43%;
+    background: yellow;
+    height: 15%;
+    width: 20%;
+    z-index: 16;
+}
+
+.die-roll {
+    width: 50%;
+    height: 40%;
+    margin: auto;
+    bottom: 0;
+    background: rgb(195, 232, 8);
+    border: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.plyng-box {
+    z-index: 10;
+    margin-bottom: 1%;
+    margin-left: 20%;
+    position: relative;
+    background: red;
+    font-weight: bolder;
+    height: 60%;
+    width: 50%;
+}
+
+.box-cont {
+    width: 90%;
+    height: 90%;
+}
+
+.top {
+    z-index: 16;
+    background: blue;
+    width: 90%;
+    height: 90%;
+    transform:
+        perspective(50em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.left {
+    z-index: 16;
+    /* position: relative; */
+    background: rgb(184, 194, 204);
+    width: 90%;
+    height: 90%;
+
+    transform:
+        perspective(30em) rotateX(20deg) rotateY(60deg) rotateZ(0deg);
+}
+
+.right {
+    z-index: 16;
+    /* position: relative; */
+    background: rgb(156, 223, 10);
+    width: 90%;
+    height: 50%;
+    transform:
+        perspective(10em) rotateX(100deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.back {
+    z-index: 16;
+    /* position: relative; */
+    background: rgb(49, 116, 184);
+    width: 90%;
+    height: 90%;
+    transform:
+        perspective(10em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.play-game{
+    border: none;
+    width: 60%;
+    height: 70%;
+    border-radius: 100px;
+    
+}
+.text-center{
+    text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+    .cover-cont {
+        width: 60%;
+        margin-left: 20%;
+    }
+    .die-cont {
+       width: 10%;
+        margin-bottom: 22.5%;
+    }
+  }
